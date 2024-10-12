@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+   <title>Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #cddcd7;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #D06A5A;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+	nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+        .about {
+            display: flex;
+            flex-direction: row; 
+            height: 600px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; 
+            background-color: #cddcd7;
+        }
+
+        .about img {
+            width: 50%; 
+            height: 400px; 
+            object-fit: cover; 
+            margin-right: 20px; 
+        }
+
+        .about .content {
+            max-width: 50%
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .content h2 {
+            font-size: 36px;
+            color: #D06A5A;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .content p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+	.SDG {
+       	    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+       .SDG .content {
+            max-width: 50%;
+            text-align: center;
+            color: #dda83a; 
+        }
+
+      .SDG h3 {
+            color: #dda83a;
+            margin-bottom: 5px; 
+        }
+
+      .SDG h2 {
+           color: #dda83a;
+           margin-top: 0; 
+        }
+
+      .SDG p {
+           color: #dda83a; 
+           font-size: 20px;
+           line-height: 1.6;
+        }
+
+      .SDG img {
+           width: 40%;
+           object-fit: contain;
+        }
+
+    
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+
+        .footer-social a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+	 .footer-social a:hover {
+            color: #f04e23;
+        }
+
+    </style>
