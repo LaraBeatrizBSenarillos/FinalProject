@@ -153,6 +153,20 @@
             font-size: 1.1em;
             color: #666;
         }
+	
+	article{
+	    background-color: #104458; 
+	    color: #fee4b3;
+	    height: 500px;
+	}
+
+	article img {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 900px;
+	    height:100%;
+	}
 
 
 
