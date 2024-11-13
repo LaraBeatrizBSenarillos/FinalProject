@@ -154,18 +154,29 @@
             color: #666;
         }
 	
-	article{
-	    background-color: #104458; 
-	    color: #fee4b3;
-	    height: 500px;
+	article {
+	   background-color: #104458;
+	   color: #fee4b3;
+	   height: 500px;
+	   display: flex;
+	   align-items: center;
+	   justify-content: center; 
+	   padding: 20px;
+	   text-align: center;
 	}
 
 	article img {
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    width: 900px;
-	    height:100%;
+	   display: inline-block;
+	   width: 700px;
+	   height: auto;
+	   margin-right: 50px;
+	}
+
+	article p {
+	   display: inline-block;
+	   font-size: 20px;
+	   line-height: 1.6;
+	   max-width: 800px;
 	}
 
 
