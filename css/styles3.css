@@ -1,0 +1,217 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5eedc;
+        font-family: Arial, sans-serif;
+        min-height: 100vh; 
+    }
+
+    /* Header */
+    header {
+        width: 100%;
+        background-color: #D2B48C; 
+        padding: 20px;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Section */
+    .sprite-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        max-width: 1200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: white; 
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text {
+        flex: 1;
+        padding: 20px;
+        text-align: left; 
+    }
+
+    .text h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .text p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+   
+    .sprite-container {
+        width: 130px; 
+        height: 130px; 
+        overflow: hidden; 
+        position: relative;
+    }
+
+    .sprite {
+        background: url('https://www.shutterstock.com/image-illustration/chocolate-chip-cookie-being-eaten-260nw-1645097104.jpg') no-repeat -17px -78px;
+        width: 120px;
+        height: 150px;
+        animation: popcornAnimation 3s steps(10) infinite;
+    }
+
+    .food-importance {
+        background-image: url('https://i.pinimg.com/736x/87/1f/25/871f25ff5359b3c1d856460a983a2391.jpg');
+        background-size: cover; 
+        background-position: center; 
+        padding: 20px; 
+        color: white; 
+        text-align: center; 
+        width: 100%;
+        box-sizing: border-box;
+        height: 350px; 
+    }
+
+    
+    .food-card {
+        width: 250px; 
+        height: 300px; 
+        perspective: 1000px;
+        margin: 20px auto; 
+        display: block; 
+        position: relative; 
+    }
+
+   
+    .food-card-inner {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+
+    .food-card:hover .food-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    
+    .food-card-front, .food-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .food-card-front {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .food-card-front img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #ccc;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .food-card-front h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .food-card-back {
+        background: #f4f4f4;
+        padding: 20px;
+        transform: rotateY(180deg);
+        border-radius: 10px;
+    }
+
+    .food-card-back p {
+        font-size: 1em;
+        color: #555;
+    }
+
+   
+    @keyframes popcornAnimation {
+        from {
+            background-position: -17px;
+        }
+        to {
+            background-position: -1259px;
+        }
+    }
+
+    /* Footer */
+    footer {
+        background-color: #D2B48C; 
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        position: relative; 
+        margin-top: auto; 
+    }
+
+    
+    .audio-section {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    audio {
+        width: 60%;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+
