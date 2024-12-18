@@ -220,40 +220,33 @@ footer p {
     font-size: 1em;
 }
 
-.footer-social {
-    margin-top: 20px;
+.icon-container {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
+    margin-top: 10px;
 }
 
-.footer-social a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.4em;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.facebook {
+    background: url('https://c8.alamy.com/comp/2PE18WG/collection-of-popular-social-media-logo-facebook-youtube-whatsapp-instagram-twitter-linkedin-pinterest-telegram-tiktok-2PE18WG.jpg') no-repeat -28px -87px;
+    background-size: 650px 370px;
+    width: 53px;
+    height: 57px;
 }
 
-.footer-social a:hover {
-    color: #f04e23;
+.twitter {
+    background: url('https://c8.alamy.com/comp/2PE18WG/collection-of-popular-social-media-logo-facebook-youtube-whatsapp-instagram-twitter-linkedin-pinterest-telegram-tiktok-2PE18WG.jpg') no-repeat -295px -87px;
+    background-size: 650px 370px;
+    width: 53px;
+    height: 57px;
 }
 
-@media (max-width: 768px) {
-    .banner {
-        height: 500px;
-    }
-
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-content div {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .banner-content h1 {
-        font-size: 2.5em;
-    }
+.insta {
+    background: url('https://c8.alamy.com/comp/2PE18WG/collection-of-popular-social-media-logo-facebook-youtube-whatsapp-instagram-twitter-linkedin-pinterest-telegram-tiktok-2PE18WG.jpg') no-repeat -231px -87px;
+    background-size: 650px 370px;
+    width: 53px;
+    height: 57px;
 }
+
 
 
