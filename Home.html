@@ -4,53 +4,142 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>World Hunger Relief</h1>
-    <nav>
-      <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="files/Background.html">Background</a></li>
-        <li><a href="files/Importance.html">Importance</a></li>
-        <li><a href="#">How to Help</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>World Hunger Relief</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="files/Background.html">Background</a></li>
+                <li><a href="files/Importance.html">Importance</a></li>
+                <li><a href="#">How to Help</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="banner">
-    <div class="banner-overlay"></div>
-    <div class="banner-content">
-      <img src="https://i.pinimg.com/564x/2d/9d/ac/2d9dac0c79d13079018a536da8cde74f.jpg" alt="Banner Image">
-      <h1>The Global Challenge to Achieving Zero Hunger</h1>
-      <p>Help us provide food and hope to those in need.</p>
-      <button>Donate Now</button>
-    </div>
-  </section>
+    <section class="banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <img src="https://i.pinimg.com/564x/2d/9d/ac/2d9dac0c79d13079018a536da8cde74f.jpg" alt="Banner Image">
+            <h1>The Global Challenge to Achieving Zero Hunger</h1>
+            <p>Help us provide food and hope to those in need.</p>
+            <button>Donate Now</button>
+        </div>
+    </section>
+    
+    <article>
+        <img src="https://miro.medium.com/v2/resize:fit:1200/0*D27vjy00QBK2HPDW.jpg" alt="Our Mission">
+        <p>Zero Hunger is the second goal of the United Nations Sustainable Development Goals (SDGs), aiming to end hunger, achieve food security, and improve nutrition by 2030.<br><br> It seeks to ensure that everyone, especially vulnerable populations, has access to sufficient, safe, and nutritious food throughout the year. This goal also promotes sustainable agriculture, encouraging practices that increase food production while protecting the environment.<br><br>Achieving Zero Hunger requires reducing food waste, supporting small-scale farmers, and improving food distribution systems. By working toward this goal, the world can eliminate malnutrition and create a future where no one suffers from hunger.</p>
+    </article>
+    
+ <section class="main-content">
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="circle front">
+                    <div class="inner-circle"></div>
+                    <h2>When Did It Start?</h2>
+                    <p>Hover to see details</p>
+                </div>
+                <div class="circle back">
+                    <div class="inner-circle"></div>
+                    <p>The Zero Hunger initiative is part of the United Nations Sustainable Development Goals (SDGs), specifically Goal 2: Zero Hunger, which was established in September 2015 as part of the 2030 Agenda for Sustainable Development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="circle front">
+                    <div class="inner-circle"></div>
+                    <h2>Current Challenges</h2>
+                    <p>Hover to see details</p>
+                </div>
+                <div class="circle back">
+                    <div class="inner-circle"></div>
+                    <p>As of March 2025, progress <br>toward achieving Zero Hunger, as outlined in Sustainable Development Goal 2 (SDG 2), has encountered significant challenges. In Bangladesh, the United Nations plans to reduce food rations for Rohingya refugees from $12.50 to $6 per month starting April 1, due to funding shortages, raising concerns about increased hunger in refugee camps.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="circle front">
+                    <div class="inner-circle"></div>
+                    <h2>Targets</h2>
+                    <p>Hover to see details</p>
+                </div>
+                <div class="circle back">
+                    <div class="inner-circle"></div>
+                    <p>Zero Hunger aims to end hunger <br>and ensure nutritious food for all by 2030. It focuses on reducing malnutrition, supporting small farmers, and promoting sustainable farming. Protecting food resources and improving rural development are key goals. Stronger policies and funding are needed to succeed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <aside>
+        <h1>Zero Hunger Initiative Questionnaire</h1>
+        <div id="question-container">
+            <div class="question" id="question-1">
+                <p>1. What is the main goal of the Zero Hunger initiative?</p>
+                <label><input type="radio" name="q1" value="A"> A) To end all forms of poverty</label>
+                <label><input type="radio" name="q1" value="B"> B) To ensure access to nutritious food and end hunger by 2030</label>
+                <label><input type="radio" name="q1" value="C"> C) To promote technological advancements in agriculture</label>
+                <label><input type="radio" name="q1" value="D"> D) To provide financial aid to all farmers worldwide</label>
+                <div class="button-container">
+                    <button onclick="submitAnswer(1)">Submit</button>
+                    <button onclick="nextQuestion()">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question-2">
+                <p>2. When was the Zero Hunger initiative established?</p>
+                <label><input type="radio" name="q2" value="A"> A) 2000</label>
+                <label><input type="radio" name="q2" value="B"> B) 2010</label>
+                <label><input type="radio" name="q2" value="C"> C) 2015</label>
+                <label><input type="radio" name="q2" value="D"> D) 2020</label>
+                <div class="button-container">
+                    <button onclick="submitAnswer(2)">Submit</button>
+                    <button onclick="nextQuestion()">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question-3">
+                <p>3. What are some of the key challenges in achieving Zero Hunger today?</p>
+                <label><input type="radio" name="q3" value="A"> A) A surplus of food production leading to waste</label>
+                <label><input type="radio" name="q3" value="B"> B) Decreasing population growth affecting food supply</label>
+                <label><input type="radio" name="q3" value="C"> C) Funding shortages causing food rations to be reduced</label>
+                <label><input type="radio" name="q3" value="D"> D) Too many people choosing to eat unhealthy food</label>
+                <div class="button-container">
+                    <button onclick="submitAnswer(3)">Submit</button>
+                    <button onclick="nextQuestion()">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question-4">
+                <p>4. Which group of people is at high risk of hunger due to funding shortages?</p>
+                <label><input type="radio" name="q4" value="A"> A) Indigenous tribes in South America</label>
+                <label><input type="radio" name="q4" value="B"> B) Refugees in Bangladesh</label>
+                <label><input type="radio" name="q4" value="C"> C) Farmers in Europe</label>
+                <label><input type="radio" name="q4" value="D"> D) University students in developed countries</label>
+                <div class="button-container">
+                    <button onclick="submitAnswer(4)">Submit</button>
+                    <button onclick="nextQuestion()">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question-5">
+                <p>5. What are the main ways Zero Hunger aims to be achieved?</p>
+                <label><input type="radio" name="q5" value="A"> A) Supporting small farmers and promoting sustainable farming</label>
+                <label><input type="radio" name="q5" value="B"> B) Reducing taxes on food imports and exports</label>
+                <label><input type="radio" name="q5" value="C"> C) Encouraging people to eat more processed foods</label>
+                <label><input type="radio" name="q5" value="D"> D) Banning large-scale farming operations</label>
+                <div class="button-container">
+                    <button onclick="submitAnswer(5)">Submit</button>
+                    <button onclick="displayResults()">Finish</button>
+                </div>
+            </div>
+        </div>
+        <div id="try-again">
+            <p id="result-message"></p>
+            <button onclick="resetQuiz()">Try Again</button>
+        </div>
+    </aside>
 
-  <section class="main-content">
-    <div>
-      <img src="https://i.pinimg.com/564x/fb/dc/22/fbdc22e76284c68f642337a12683b40a.jpg" alt="Our Mission">
-      <h2>Our Mission</h2>
-      <p>Dedicated to eliminating hunger worldwide by providing essential food supplies to the most vulnerable.</p>
-    </div>
-    <div>
-      <img src="https://i.pinimg.com/564x/23/5d/31/235d31dec02b2cd51cb0985812acfa3b.jpg" alt="Get Involved">
-      <h2>Get Involved</h2>
-      <p>Join as a volunteer or make a donation. Every action brings us closer to a hunger-free world.</p>
-    </div>
-    <div>
-      <img src="https://i.pinimg.com/564x/c2/ac/aa/c2acaa3b7e163fa7568361f71bb49538.jpg" alt="Partner with Us">
-      <h2>Partner with Us</h2>
-      <p>Collaborate with organizations to make a larger impact. Together, we can fight hunger globally.</p>
-    </div>
-  </section>
-
-  <article>
-    <img src="https://i.pinimg.com/736x/2d/c9/7b/2dc97ba88dd4f23e0369e4a976478140.jpg" alt="Our Mission">
-    <p>The scale of the current global hunger and malnutrition crisis is enormous. 
-      Millions of people are in the grips of catastrophic hunger – primarily in Gaza and Sudan but also in pockets of South Sudan, 
-      Mali and many other countries. They are teetering on the brink of famine.</p>
-  </article>
+    <script src="files/script.js"></script>
 
    <footer>
     <p>&copy; 2024 Lara Beatriz B. Senarillos | All Rights Reserved | 9-Lithium</p>
@@ -62,9 +151,6 @@
   </footer>
 </body>
 </html>
-
-
-
 
 
 
