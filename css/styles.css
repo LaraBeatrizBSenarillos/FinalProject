@@ -55,7 +55,6 @@ img[src$=".jpg"] {
     border-radius: 5px;
 }
 
-
 a[target="_blank"] {
     font-style: italic;
 }
@@ -121,65 +120,88 @@ a[target="_blank"] {
 }
 
 .main-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 10%;
-    background-color: #e6e1c8;
+     display: flex;
+     justify-content: space-around;
+     padding: 60px 10%;
+     background-color: #e6e1c8;
 }
 
-.main-content div {
-    background-color: #faf2e1; 
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.flip-container {
+     perspective: 1000px; 
 }
 
-.main-content div:hover {
-    transform: translateY(-10px);
+.flipper {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      transition: transform 0.6s;
+      transform-style: preserve-3d; 
 }
 
-
-
-.main-content div:first-child {
-    background-color: #6c96b8;
-    color: white;
+.flip-container:hover .flipper {
+      transform: rotateY(180deg); 
 }
 
-.main-content div:last-child {
-    background-color: #f04e23;
-    color: white;
+.circle {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden; 
 }
 
-
-.main-content div:nth-child(even) {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+.front {
+      background-color: #faf2e1; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 }
 
-.main-content div img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
+.back {
+      background-color: #333; 
+      color: white;
+      transform: rotateY(180deg); 
+      padding: 20px;
+      text-align: center;
+      border-radius: 50%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ }
 
-.main-content div h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-}
+        .inner-circle {
+            position: absolute;
+            width: 90%; 
+            height: 90%; 
+            border-radius: 50%; 
+            background-color: #ffffff; 
+            z-index: 1; 
+        }
 
-.main-content div p {
-    font-size: 1.1em;
-    color: #666;
-}
+        .circle h2 {
+            font-size: 1.5em; 
+            margin-bottom: 10px;
+            z-index: 2; 
+            position: relative; 
+        }
+
+        .circle p {
+            font-size: 0.9em; 
+            color: #666;
+            text-align: center; 
+            padding: 0 10px; 
+            z-index: 2; 
+            position: relative; 
+        }
 
 article {
-    background-color: #104458;
-    color: #fee4b3;
+    background-color: #fcebbf;
+    color: #7e620e;
     height: 500px;
     display: flex;
     align-items: center;
@@ -190,11 +212,10 @@ article {
 
 article img {
     display: inline-block;
-    width: 700px;
+    width: 450px;
     height: auto;
     margin-right: 50px;
 }
-
 
 article p:first-of-type {
     border-bottom: 2px solid #fee4b3;
@@ -247,6 +268,69 @@ footer p {
     width: 53px;
     height: 57px;
 }
+
+aside {
+            background-color: #ffffff; 
+            border: 1px solid #ccc; 
+            border-radius: 8px; 
+            padding: 20px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px; 
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .question { 
+            display: none; 
+            margin-bottom: 20px; 
+        }
+
+        label {
+            display: block; 
+            margin: 10px 0; 
+            color: #555;
+        }
+
+        button {
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 15px; 
+            cursor: pointer; 
+            font-size: 16px;
+            margin: 5px; 
+        }
+
+        button:hover {
+            background-color: #218838; 
+        }
+
+        #try-again {
+            display: none; 
+            margin-top: 20px; 
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end; 
+            margin-top: 20px; 
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+
 
 
 
