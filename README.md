@@ -1,4 +1,4 @@
-- This is a Laboratory Activity on Modules 1 to 5 from Quarter 1, Modules 6 and 7 from Quarter 2 and Modules 8 to.
+- This is a Laboratory Activity on Modules 1 to 
  - The topics covered in this activity are HTML, CSS and Javascript.
 - https://github.com/LaraBeatrizBSenarillos/FinalProject
 
