@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Profile - End Hunger Now</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header>
+    <h1>YOUR PROFILE</h1>
+    <nav>
+      <ul>
+	<li><a href="Home.html">Home</a></li>
+        <li><a href="files/Background.html">Background</a></li>
+        <li><a href="files/Importance.html">Importance</a></li>
+        <li><a href="proj_signup_senarillos.html">Sign-up</a></li>
+	<li><a href="proj_profile_senarillos.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Thank you for signing up!</h2>
+    <p><strong>Name:</strong> <span id="displayName"></span></p>
+    <p><strong>Sex:</strong> <span id="displaySex"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    <p><strong>Contact:</strong> <span id="displayContact"></span></p>
+    <p><strong>Reason:</strong> <span id="displayReason"></span></p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("displayName").textContent = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
+      document.getElementById("displaySex").textContent = localStorage.getItem("sex");
+      document.getElementById("displayEmail").textContent = localStorage.getItem("email");
+      document.getElementById("displayContact").textContent = localStorage.getItem("contact");
+      document.getElementById("displayReason").textContent = localStorage.getItem("reason");
+    });
+  </script>
+
+</body>
+</html>

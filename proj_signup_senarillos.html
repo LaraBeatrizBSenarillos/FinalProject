@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>End Hunger Now - Signup</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header>
+    <h1>SIGN-UP</h1>
+    <nav>
+      <ul>
+	<li><a href="Home.html">Home</a></li>
+                <li><a href="files/Background.html">Background</a></li>
+                <li><a href="files/Importance.html">Importance</a></li>
+                <li><a href="proj_signup_senarillos.html">Sign-up</a></li>
+		<li><a href="proj_profile_senarillos.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>
+      <img src="https://i.pinimg.com/736x/c9/86/1e/c9861ec387d947ba719b9e9638e2bbe3.jpg" alt="Logo" class="logo" style="width:220px;height:150px;">
+      End Hunger Now
+    </h1>
+    <p>Together, we can put an end to global hunger.</p>
+
+    <form id="signupForm" novalidate>
+      <label for="firstName" class="required">First Name</label>
+      <input type="text" id="firstName" name="firstName" />
+      <div id="firstNameError" class="error"></div>
+
+      <label for="lastName" class="required">Last Name</label>
+      <input type="text" id="lastName" name="lastName" />
+      <div id="lastNameError" class="error"></div>
+
+      <label class="required">Sex</label>
+      <div class="radio-group" id="sexGroup">
+        <label><input type="radio" name="sex" value="Male" /> Male</label>
+        <label><input type="radio" name="sex" value="Female" /> Female</label>
+        <label><input type="radio" name="sex" value="Prefer not to say" /> Prefer not to say</label>
+      </div>
+      <div id="sexError" class="error"></div>
+
+      <label for="email" class="required">Email Address</label>
+      <input type="text" id="email" name="email" />
+      <div id="emailError" class="error"></div>
+
+      <label for="password" class="required">Password</label>
+      <input type="password" id="password" name="password" />
+      <div id="passwordError" class="error"></div>
+
+      <label for="contact">Contact Number</label>
+      <input type="text" id="contact" name="contact" />
+
+      <label for="reason" class="required">Why you're supporting our campaign</label>
+      <textarea id="reason" name="reason" rows="4"></textarea>
+      <div id="reasonError" class="error"></div>
+
+      <button type="submit">Join the Movement</button>
+    </form>
+  </div>
+
+  <script src="form.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Lara Beatriz B. Senarillos | All Rights Reserved | 9-Lithium</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/">Facebook</a>
+      <a href="https://x.com/">Twitter</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
